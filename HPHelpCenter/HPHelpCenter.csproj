@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6E85396-555D-4DDA-A294-CE05B2F5C461}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HPHelpCenter</RootNamespace>
+    <AssemblyName>HPHelpCenter</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dal\BusinessEntity.cs" />
+    <Compile Include="Dal\DAL.cs" />
+    <Compile Include="Dal\DBHelper.cs" />
+    <Compile Include="Dal\Handler.cs" />
+    <Compile Include="Dal\IssueHandler.cs" />
+    <Compile Include="Dal\PictureHandler.cs" />
+    <Compile Include="Dal\ItemHandler.cs" />
+    <Compile Include="Dal\SolutionHandler.cs" />
+    <Compile Include="Dal\TopicHandler.cs" />
+    <Compile Include="Dal\UserHandler.cs" />
+    <Compile Include="Gui\AddNewIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AddNewIssue.Designer.cs">
+      <DependentUpon>AddNewIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AddNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AddNewItem.Designer.cs">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AddNewSolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AddNewSolution.Designer.cs">
+      <DependentUpon>AddNewSolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AddNewTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AddNewTopic.Designer.cs">
+      <DependentUpon>AddNewTopic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AddNewUser.Designer.cs">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\CrewHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CrewHomePage.Designer.cs">
+      <DependentUpon>CrewHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\IssuesandSolutions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\IssuesandSolutions.Designer.cs">
+      <DependentUpon>IssuesandSolutions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\TechnicalProblems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechnicalProblems.Designer.cs">
+      <DependentUpon>TechnicalProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Topics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Topics.Designer.cs">
+      <DependentUpon>Topics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse.Designer.cs">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ProgHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ProgHomePage.Designer.cs">
+      <DependentUpon>ProgHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Issue.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Solution.cs" />
+    <Compile Include="Models\Picture.cs" />
+    <Compile Include="Models\Topic.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Gui\TechHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechHomePage.Designer.cs">
+      <DependentUpon>TechHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utiliteis\ServiceFacade.cs" />
+    <Compile Include="Models\User.cs" />
+    <EmbeddedResource Include="Gui\AddNewIssue.resx">
+      <DependentUpon>AddNewIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AddNewItem.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AddNewSolution.resx">
+      <DependentUpon>AddNewSolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AddNewTopic.resx">
+      <DependentUpon>AddNewTopic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AddNewUser.resx">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CrewHomePage.resx">
+      <DependentUpon>CrewHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\IssuesandSolutions.resx">
+      <DependentUpon>IssuesandSolutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechnicalProblems.resx">
+      <DependentUpon>TechnicalProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Topics.resx">
+      <DependentUpon>Topics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse.resx">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ProgHomePage.resx">
+      <DependentUpon>ProgHomePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Gui\TechHomePage.resx">
+      <DependentUpon>TechHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\HPHelpCenter.Gui.Users.datasource" />
+    <None Include="Properties\DataSources\HPHelpCenter.Models.Issue.datasource" />
+    <None Include="Properties\DataSources\HPHelpCenter.Models.Solution.datasource" />
+    <None Include="Properties\DataSources\HPHelpCenter.Models.Topic.datasource" />
+    <None Include="Properties\DataSources\User.datasource" />
+    <None Include="Properties\DataSources\User.UserCountry.datasource" />
+    <None Include="Properties\DataSources\User.UserGender.datasource" />
+    <None Include="Properties\DataSources\User.UserRole.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <!--<ItemGroup>
+    <Folder Include="Pictures\" />
+  </ItemGroup -->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
